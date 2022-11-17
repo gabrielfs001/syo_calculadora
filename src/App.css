@@ -1,38 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202121;
+  color: white; 
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.AppPt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AppPt2 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(197, 193, 193)
+
+}
+
+.Counter {
+  text-align: left;
+  float: left;
+  margin-right: 60px;
+}
+
+.TotalPerPerson{
+  text-align: right;
+  float: right;
+  margin-left: 60px;
+} 
+
+.Counter input {
+  width: 50px;
+
+}
+
+input, label, select {
+  width: 400px;
+  margin-bottom: 10px;
+  font-size: 22px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  border-radius: 50px;
+  padding-left: 10px;
+  background-color: rgb(67, 157, 160);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
